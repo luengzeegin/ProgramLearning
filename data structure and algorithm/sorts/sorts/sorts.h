@@ -356,7 +356,7 @@ int binarySearch(const T data[], size_t arrsize,const T& key)
 	int low = 0, mid, high = arrsize - 1;
 	while (low <= high)
 	{
-		mid = (low + high) / 2;
+		mid = low + (high - low) / 2;
 		if (key < data[mid])
 		{
 			high = mid - 1;
