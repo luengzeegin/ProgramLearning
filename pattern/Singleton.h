@@ -2,10 +2,10 @@
 class SingleTon
 {
 public:
-	static SingleTon& getInstance()
+	SingleTon& getInstance()
 	{
 		static SingleTon* instance;
-		return instance;
+		return *instance;
 	}
 
 	SingleTon(const SingleTon& rhs) = delete;
