@@ -39,7 +39,7 @@ Mystring::Mystring(const Mystring& rhs)
 {
 }
 
-Mystring::Mystring(Mystring&& rhs)
+Mystring::Mystring(Mystring&& rhs) noexcept
 	: _data(std::move(rhs._data))
 {
 	rhs._data = nullptr;
@@ -51,7 +51,7 @@ Mystring::~Mystring() noexcept
 }
 
 
-Mystring& Mystring::operator= (const Mystring& rhs) // (Mystring rhs)
+Mystring& Mystring::operator= (const Mystring& rhs) 
 {
 	if (this != &rhs)
 	{
@@ -60,6 +60,13 @@ Mystring& Mystring::operator= (const Mystring& rhs) // (Mystring rhs)
 	}
 	return *this;
 }
+
+// Mystring& operator= (Mystring rhs) c++11
+//{
+//	swap(tmp);
+//	return *this;
+//}
+
 
 Mystring Mystring::operator+ (const Mystring& rhs)
 {
