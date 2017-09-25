@@ -152,6 +152,7 @@ private:
 	 node_ptr cur2 = nullptr;
 	 while (cur1 != nullptr)
 	 {
+		 cur2 = cur1->left;
 		 if (cur2 != nullptr)
 		 {
 			 while (cur2->right != nullptr && cur2->right != cur1)
