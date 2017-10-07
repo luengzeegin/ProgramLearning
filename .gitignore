@@ -27,3 +27,23 @@
 *.exe
 *.out
 *.app
+/data structure and algorithm/sorts/sorts/sorts.vcxproj
+/.vs
+/.vs/VSWorkspaceState.json
+/.vs/slnx.sqlite
+/.vs/ProjectSettings.json
+/.vs/ProgramLearning/v15/ipch/AutoPCH/b1a7daf3/标头1-4ee9edf6/标头1.ipch
+/.vs/ProgramLearning/v15/ipch/AutoPCH/b1a7daf3/标头1-4ee9edf6
+/.vs/ProgramLearning/v15/ipch/AutoPCH/b1a7daf3/SINGLETON-722b103d/SINGLETON.ipch
+/.vs/ProgramLearning/v15/ipch/AutoPCH/b1a7daf3/SINGLETON-722b103d
+/.vs/ProgramLearning/v15/ipch/AutoPCH/b1a7daf3/BIGEND OR LITTLEEND-81bd65ce/BIGEND OR LITTLEEND.ipch
+/.vs/ProgramLearning/v15/ipch/AutoPCH/b1a7daf3/BIGEND OR LITTLEEND-81bd65ce
+/.vs/ProgramLearning/v15/ipch/AutoPCH/b1a7daf3
+/.vs/ProgramLearning/v15/Browse.VC.opendb
+/.vs/ProgramLearning/v15/Browse.VC.db
+/.vs/ProgramLearning/v15/.suo
+/.vs/ProgramLearning/v15
+/.vs
+/.vs/slnx.sqlite
+/data structure and algorithm/sorts/.vs/sorts/v15
+/data structure and algorithm/sorts/sorts/sorts.vcxproj.filters
