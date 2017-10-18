@@ -1,3 +1,5 @@
+#include <assert.h>
+
 template<typename SmartPointer,typename Type>
 class RefCount
 {
