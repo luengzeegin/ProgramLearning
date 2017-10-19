@@ -17,8 +17,9 @@ public:
 	}
 	
 private:
-	size_t _count;
-	Type* _ptr;
+	Type*	_ptr;
+	size_t	_count;
+	
 };
 
 template<typename Type>

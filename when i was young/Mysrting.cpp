@@ -34,8 +34,14 @@ Mystring::Mystring(const char *str)
 	}
 }
 
-Mystring::Mystring(const Mystring& rhs)
-	: Mystring(rhs._data)
+Mystring::Mystring(const Mystring& other)
+	:_data(new char[other.size() + 1])
+{
+	strcpy(_data, other._data);
+}
+
+Mystring::Mystring(const Mystring& other) // delegate ctor
+	: Mystring(other._data)
 {
 }
 

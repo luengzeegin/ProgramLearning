@@ -42,9 +42,11 @@ public:
 	}
 
 private:
-	list<pair<KEY_T, VAL_T>> _item_list;
-	unordered_map<KEY_T, decltype(item_list.begin())> _item_map;
-	size_t _cache_size;
+	size_t												_cache_size;
+	list<pair<KEY_T, VAL_T>>							_item_list;
+	unordered_map<KEY_T, decltype(item_list.begin())>	_item_map;
+
+private:
 	void adjust()
 	{
 		do
