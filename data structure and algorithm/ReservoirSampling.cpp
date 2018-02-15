@@ -25,7 +25,7 @@ bool isExisted(const vector<uint32_t> vec_be_checked, uint32_t element)
 	return false;
 }
 
-// 每个数留在池中的概率 = 出现时的概率(reservoir_capacity / candidate_num) * 不会被池丢弃的概率 [1 - (reservoir_capacity / candidate_num * 1 / reservoir_capacity)]
+// 每个数留在池中的概率 = 出现时中奖的概率(reservoir_capacity / candidate_num) * 不会被池丢弃的概率 [1 - (reservoir_capacity / candidate_num * 1 / reservoir_capacity)]
 void ReservoirSampling(vector<uint32_t>& res_vec, uint32_t reservoir_capacity, uint32_t candidate_num)
 {
 	if (reservoir_capacity < 1 || candidate_num < 1)
