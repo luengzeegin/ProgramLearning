@@ -2,6 +2,20 @@
 
 using namespace std;
 
+bool IsLittleEnd()
+{
+	static uint32_t a = 0x10000000;
+	char b[1] = { a };
+	if (!b[0])
+	{
+		return true;
+	}
+	else
+	{
+		return false;
+	}
+}
+
 union Big_or_little
 {
 	uint32_t a;
@@ -21,6 +35,7 @@ int main()
 	cout << hex << b2 << endl;
 	cout << hex << b3 << endl;
 	cout << hex << b4 << endl;
+	cout << boolalpha << IsLittleEnd() << endl;
 	getchar();
 	getchar();
 }
