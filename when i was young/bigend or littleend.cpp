@@ -2,6 +2,16 @@
 
 using namespace std;
 
+// ´óÐ¡¶Ë×ª»»
+inline uint32_t Transfrom(uint32_t origin)
+{
+	return (((origin & 0xFF000000) >> 24)
+		| ((origin & 0xFF0000) >> 8)
+		| ((origin & 0xFF00) << 8)
+		| ((origin & 0xFF) << 24)
+		);
+}
+
 bool IsLittleEnd()
 {
 	static uint32_t a = 0x10000000;
