@@ -23,6 +23,22 @@ protected:
 class FSM
 {
 public:
+	FSM()
+	{
+		_cur_state = 0;
+	}
+
+	~FSM()
+	{
+		for (auto it = _all_state.begin(); it != _all_state.end(); ++it)
+		{
+			it->first = NULL_STATE;
+			delete(it->second);
+		}
+
+		_all_state.clear();
+	}
+
 	void InitState(g_state stateNo)
 	{
 		_cur_state = stateNo;
@@ -83,6 +99,11 @@ class StateStartTrun : public State
 public:
 	StateStartTurn(FSM * fsm, int timeId) : State(fsm), _time_id(timeId) {}
 
+	~StateStartTrun() 
+	{
+		_time_id = 0;
+	}
+
 	void OnStateEnter() override
 	{
 		cout << "enter start turn" << endl;
@@ -110,6 +131,11 @@ class StateOnTrun : public State
 {
 public:
 	StateOnTurn(FSM * fsm, int timeId) : State(fsm), _time_id(timeId) {}
+
+	~StateOnTrun()
+	{
+		_time_id = 0;
+	}
 
 	void OnStateEnter() override
 	{
